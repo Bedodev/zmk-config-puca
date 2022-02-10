@@ -1,0 +1,12 @@
+file_format: "1"
+id: puca
+name: Puca Macropad 
+type: shield
+url: https://github.com/FootFingers/Puca
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
