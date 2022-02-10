@@ -12,11 +12,7 @@
 
 #define TIMEOUT 300
 
-&encoder_1 {
-    status = "okay";
-};
-
-/ {
+ / {
     combos {
         compatible = "zmk,combos";
         combo_btclr {
@@ -53,7 +49,7 @@
         default_layer {
             label = "default layer";
             bindings = <
-                &kp C_MUTE       &trans      &trans          &kp LC(LA(C))     &kp LG(D)   
+                &kp C_MUTE       &trans      &trans          &trans            &trans   
                 &trans          &kp ESC      &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp KP_MINUS    
                 &trans          &kp KP_N7    &kp KP_N8       &kp KP_N9         &kp KP_PLUS   
                 &trans          &kp KP_N4    &kp KP_N5       &kp KP_N6         &trans
