@@ -33,6 +33,14 @@
 			;
 	};
 
+	encoder_1: encoder_1 {
+		compatible = "alps,ec11";
+		label = "ENCODER_ONE";
+		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		resolution = <4>;
+	};
+
 };
 
 &encoder_1 {

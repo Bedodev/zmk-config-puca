@@ -6,6 +6,9 @@ if SHIELD_PUCA
 config ZMK_KEYBOARD_NAME
 	default "Puca"
 
+config EC11
+	default y
+
 if ZMK_DISPLAY
 
 config I2C
