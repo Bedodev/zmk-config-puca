@@ -23,10 +23,10 @@
                 &kp ESC         &kp KP_DIVIDE   &kp KP_MULTwIPLY   &kp KP_MINUS      &trans    
                 &kp KP_N7       &kp KP_N8       &kp KP_N9         &kp KP_PLUS       &trans   
                 &kp KP_N4       &kp KP_N5       &kp KP_N6         &trans            &trans
-                &kp KP_N1       kp KP_N2        &kp KP_N3         &kp KP_ENTER      &trans
+                &kp KP_N1       &kp KP_N2       &kp KP_N3         &kp KP_ENTER      &trans
                 &kp KP_N0       &trans          &kp KP_DOT        &trans            &trans
             >;
-            sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
+            sensor-bindings = < &inc_dec_kp KP_N2 KP_N6 >;
 
         }; 
     };
