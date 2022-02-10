@@ -12,10 +12,6 @@
 
 #define TIMEOUT 300
 
-&encoder_1 {
-    status = "okay";
-};
-
 / {
     combos {
         compatible = "zmk,combos";

@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-encoder_1: first_encoder {
+encoder_1: encoder_1 {
 		compatible = "alps,ec11";
 		label = "ENCODER_1";
 		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
