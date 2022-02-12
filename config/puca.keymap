@@ -12,6 +12,13 @@
 
 #define TIMEOUT 300
 
+#define DEF 0
+#define STG 1
+
+&encoder_1 {
+    status = "okay";
+};
+
  / {
     keymap0: keymap {
         compatible = "zmk,keymap";
@@ -19,15 +26,31 @@
         default_layer {
             label = "default layer";
             bindings = <
-                &kp C_MUTE      &trans          &kp C_PREV        &kp C_NEXT        &trans
-                &kp ESC         &kp KP_DIVIDE   &kp KP_MULTIPLY   &kp KP_MINUS      &trans    
-                &kp KP_N7       &kp KP_N8       &kp KP_N9         &kp KP_PLUS       &trans   
-                &kp KP_N4       &kp KP_N5       &kp KP_N6         &trans            &trans
-                &kp KP_N1       &kp KP_N2       &kp KP_N3         &kp KP_ENTER      &trans
-                &kp KP_N0       &trans          &kp KP_DOT        &trans            &trans
+                &kp C_MUTE          &trans              &kp C_PREV          &kp C_NEXT          &trans
+                &mo STG             &kp KP_DIVIDE       &kp KP_MULTIPLY     &kp KP_MINUS        &kp KP_MINUS    
+                &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_PLUS         &kp KP_PLUS   
+                &kp KP_N4           &kp KP_N5           &kp KP_N6           &trans              &trans
+                &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_ENTER        &kp KP_ENTER
+                &kp KP_N0           &kp KP_N0           &kp KP_DOT          &trans              &trans
             >;
-            sensor-bindings = < &inc_dec_kp KP_N5 KP_N8 >;
+            sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
+
+        };
+
+
+        settings_layer {
+            label = "settings layer";
+            bindings = <
+                &trans          &trans          &trans          &trans          &trans
+                &trans          &trans          &trans          &trans          &trans    
+                &trans          &trans          &trans          &trans          &trans   
+                &trans          &trans          &trans          &trans          &trans
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR      &bt BT_CLR
+                &trans          &trans          &trans          &trans          &trans
+            >;
+            sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
 
         }; 
+
     };
 };
