@@ -38,7 +38,7 @@
         settings_layer {
             label = "settings layer";
             bindings = <
-                &kp C_MUTE      &trans          &trans          &trans          &trans
+                &kp C_MUTE      &trans          &trans          &tog GMG        &trans
                 &trans          &trans          &trans          &trans          &trans    
                 &trans          &trans          &trans          &trans          &trans   
                 &trans          &trans          &trans          &trans          &trans
@@ -48,6 +48,21 @@
             sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
 
         }; 
+
+
+        gamepad_layer {
+            label = "gamepad layer";
+            bindings = <
+                &kp C_PP        &trans          &trans          &tog GMG        &trans
+                &trans          &trans          &trans          &trans          &trans    
+                &trans          &trans          &trans          &trans          &trans   
+                &trans          &trans          &trans          &trans          &trans
+                &trans          &trans          &trans          &trans          &trans
+                &trans          &trans          &trans          &trans          &trans
+            >;
+            sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
+
+        };
 
     };
 };
