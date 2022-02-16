@@ -52,12 +52,13 @@
 	};
 	
 	
-	encoder_1: encoder_1 {
+	encoder_1: the_encoder {
 		compatible = "alps,ec11";
 		label = "ENCODER_1";
 		a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
+		resolution = <2>;
+		status = "okay";
 	};
 
 	sensors {
@@ -86,8 +87,4 @@
 		com-sequential;
 		prechargep = <0x22>;
 	};
-};
-
-&encoder_1 {
-    status = "okay";
 };

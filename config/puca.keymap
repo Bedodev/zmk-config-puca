@@ -15,10 +15,6 @@
 #define DEF 0
 #define STG 1
 
-&encoder_1 {
-    status = "okay";
-};
-
  / {
     keymap0: keymap {
         compatible = "zmk,keymap";
