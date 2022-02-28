@@ -28,7 +28,7 @@
                 &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_PLUS         &kp KP_PLUS   
                 &kp KP_N4           &kp KP_N5           &kp KP_N6           &trans              &trans
                 &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_ENTER        &kp KP_ENTER
-                &kp KP_N0           &kp KP_N0           &kp KP_DOT          &trans              &kp KP_N0
+                &kp KP_N0           &kp KP_N0           &kp KP_DOT          &kp KP_DOT          &kp KP_N0
             >;
             sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
 
@@ -58,7 +58,7 @@
                 &kp E           &kp D           &kp C           &kp LALT        &kp LALT   
                 &kp W           &kp S           &kp X           &trans          &trans
                 &kp Q           &kp A           &kp Z           &kp LCTRL       &kp LCTRL
-                &kp TAB         &kp TAB         &kp LSHFT       &trans          &kp TAB
+                &kp TAB         &kp TAB         &kp LSHFT       &kp LSHFT       &kp TAB
             >;
             sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
 
