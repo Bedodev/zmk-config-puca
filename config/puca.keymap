@@ -39,7 +39,7 @@
             label = "settings layer";
             bindings = <
                 &kp C_MUTE      &trans          &trans          &tog GMG        &trans
-                &trans          &trans          &trans          &reset          &reset    
+                &trans          &trans          &trans          &bootloader     &bootloader    
                 &trans          &trans          &trans          &trans          &trans   
                 &trans          &trans          &trans          &trans          &trans
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR      &bt BT_CLR
