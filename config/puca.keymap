@@ -53,12 +53,12 @@
         gamepad_layer {
             label = "gamepad layer";
             bindings = <
-                &kp C_PP        &trans          &trans          &tog GMG        &trans
-                &trans          &trans          &trans          &trans          &trans    
-                &trans          &trans          &trans          &trans          &trans   
-                &trans          &trans          &trans          &trans          &trans
-                &trans          &trans          &trans          &trans          &trans
-                &trans          &trans          &trans          &trans          &trans
+                &kp C_PP        &trans          &kp BSPC        &tog GMG        &trans
+                &kp R           &kp G           &kp V           &kp SPACE       &kp SPACE    
+                &kp E           &kp D           &kp C           &kp LALT        &kp LALT   
+                &kp W           &kp S           &kp X           &trans          &trans
+                &kp Q           &kp A           &kp Z           &kp LCTRL       &kp LCTRL
+                &kp TAB         &kp TAB         &kp LSHFT       &trans          &kp TAB
             >;
             sensor-bindings = < &inc_dec_kp C_VOL_UP C_VOL_DN >;
 
