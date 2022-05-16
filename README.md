@@ -1,3 +1,4 @@
+[![Build](https://github.com/AXRAY23/zmk-config-puca/actions/workflows/build.yml/badge.svg)](https://github.com/AXRAY23/zmk-config-puca/actions/workflows/build.yml)
 
 # Puca-Macropad-ZMK
 
