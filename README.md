@@ -3,6 +3,7 @@
 
 A wireless firmware based on zmk for the Puca Macropad by ffkeebs.
 
+!!Currently rewriting some parts of the code!!
 
 ## Author(s)
 
